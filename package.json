@@ -1,0 +1,21 @@
+{
+  "name": "netease-music-daily-recommend-autosave",
+  "version": "1.1.0",
+  "description": "网易云音乐每日推推荐歌曲自动转存歌单",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magic-akari/NeteaseMusicDailyRecommendAutosave.git"
+  },
+  "author": "阿卡琳",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/magic-akari/NeteaseMusicDailyRecommendAutosave/issues"
+  },
+  "homepage": "https://github.com/magic-akari/NeteaseMusicDailyRecommendAutosave#readme",
+  "dependencies": {
+    "big-integer": "^1.6.27",
+    "node-fetch": "^1.7.3"
+  }
+}

@@ -1,0 +1,7 @@
+language: node_js
+node_js: node
+script: node index.js $PLAYLIST_ID $MUSIC_U
+notifications:
+  email:
+    on_success: never
+    on_failure: always
