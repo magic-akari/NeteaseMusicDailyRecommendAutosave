@@ -36,7 +36,7 @@ fetch("http://music.163.com/weapi/v2/discovery/recommend/songs", {
     .then((result) => {
         return result.recommend.map((t) => t.id).reverse();
     })
-    .then((tracks_id) => {
+    .then((tracks_id) =>
         fetch("http://music.163.com/weapi/playlist/manipulate/tracks", {
             referrer,
             headers,
@@ -49,7 +49,7 @@ fetch("http://music.163.com/weapi/v2/discovery/recommend/songs", {
                 tracks:
                     "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]",
             }),
-        });
-    })
+        })
+    )
     .then((res) => res.text())
     .then((text) => console.info(text));
